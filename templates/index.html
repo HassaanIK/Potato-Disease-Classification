@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potato Leaf Disease Prediction</title>
+</head>
+<body>
+    <h1>Potato Leaf Disease Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Predict</button>
+    </form>
+    {% if image %}
+    <h2>Uploaded Image</h2>
+    <img src="data:image/jpeg;base64,{{ image }}" alt="Uploaded Image">
+    <h2>Prediction</h2>
+    <p>Class: {{ class_name }}</p>
+    <p>Probability: {{ probability }}</p>
+    {% endif %}
+</body>
+</html>
