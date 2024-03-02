@@ -1,0 +1,1 @@
+dataset_link = "https://huggingface.co/hassaanik/Potato-Disease-Classfication/tree/main/Data"
