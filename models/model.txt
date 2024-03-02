@@ -1,0 +1,1 @@
+model_link = "https://huggingface.co/hassaanik/Potato-Disease-Classfication/blob/main/models/potato_model_statedict__f.pth"
